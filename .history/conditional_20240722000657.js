@@ -17,24 +17,15 @@ if (!isRich) {
 
 // ! Bài 1
 // Todo: Nhập vào số tuổi và kiểm tra nếu số tuổi lớn hơn 18 thì được coi phim rạp và ngược lại thì không được vào xem.
-// const yourAge = prompt("Vui lòng nhập vào số tuổi của bạn ?", "");
+const yourAge = prompt("Vui lòng nhập vào số tuổi của bạn ?", "");
 // console.log(typeof yourAge);
-// let message = "";
-// if (Number(yourAge) >= 18) {
-// 	message = "Bạn có thể vào rạp nha !";
-// } else {
-// 	message = "Bạn chưa đủ tuổi nha !";
-// }
-// alert(message);
+let message = "";
+if (Number(yourAge) >= 18) {
+	message = "Bạn có thể vào rạp nha !";
+} else {
+	message = "Bạn chưa đủ tuổi nha !";
+}
+alert(message);
 
 // ! Bài 2
-// Todo: Cho 2 số A và B, tìm ra số lớn hơn.
-const a = prompt("Nhập vào số a", "");
-const b = prompt("Nhập vào số b", "");
-if (Number(a) > Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
-} else if (Number(a) < Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
-} else {
-	alert("2 số trên bằng nhau !");
-}
+// Todo:

@@ -33,8 +33,8 @@ const a = prompt("Nhập vào số a", "");
 const b = prompt("Nhập vào số b", "");
 if (Number(a) > Number(b)) {
 	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
-} else if (Number(a) < Number(b)) {
+} else if (a < b) {
 	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
 } else {
-	alert("2 số trên bằng nhau !");
+	alert("Không có số nào lớn hơn số nào cả !");
 }

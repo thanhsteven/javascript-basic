@@ -29,12 +29,10 @@ if (!isRich) {
 
 // ! Bài 2
 // Todo: Cho 2 số A và B, tìm ra số lớn hơn.
-const a = prompt("Nhập vào số a", "");
-const b = prompt("Nhập vào số b", "");
-if (Number(a) > Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
-} else if (Number(a) < Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
-} else {
-	alert("2 số trên bằng nhau !");
+const a = 5;
+const b = 10;
+if (a > b) {
+	alert(`Số lớn hơn là số ${a}`);
+} else if (a < b) {
+	alert(`Số lớn hơn là số ${b}`);
 }
