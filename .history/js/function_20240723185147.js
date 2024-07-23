@@ -83,7 +83,7 @@ console.log(message3);
 // Parent Function
 function sayHello2() {
   let message = "Hi";
-  // inner function
+  // inner functioin
   function sayHi() {
     console.log(message);
   }
@@ -91,13 +91,3 @@ function sayHello2() {
 }
 let hello = sayHello2();
 hello();
-
-// * Trường hợp 3
-// ! Nghiên cứu trường hợp 3 để hiểu sâu hơn chứ nó hơi phức tạp rùi á
-function sayHello3(message3) {
-  return function hiYourName(name) {
-    console.log(`${message3} ${name}`);
-  };
-}
-let hello3 = sayHello3("Welcome to Javascript");
-hello3("Kim Thành");

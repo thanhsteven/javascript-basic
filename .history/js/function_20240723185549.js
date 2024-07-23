@@ -93,7 +93,6 @@ let hello = sayHello2();
 hello();
 
 // * Trường hợp 3
-// ! Nghiên cứu trường hợp 3 để hiểu sâu hơn chứ nó hơi phức tạp rùi á
 function sayHello3(message3) {
   return function hiYourName(name) {
     console.log(`${message3} ${name}`);

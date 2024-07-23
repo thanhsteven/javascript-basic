@@ -69,35 +69,8 @@ loginName();
 // ! Block Scope
 // ! Tất cả các code viết bên trong dấu {} đều được gọi là 1 block scope
 if (2 > 1) {
-  let message = "Hello for Let"; // * Let thì bên trong block scope sẽ không bị hoisting và không được đưa lên trên cùng trước khi load
-  const mesage2 = "Hello for Const"; // * Const cũng vậy không được đưa lên trên như let
-
-  var message3 = "Hello for Var";
-  // ! Var thì lại được, đối với var thì nó bị hoisting cho dù có nằm trong block scope hay không
-  // ! Var còn bị thêm vấn đề nữa là tự chuyển thành global scope luôn nhé
+  let message = "Hello Kim Thành";
 }
-console.log(message3);
+console.log(message);
 
 // ! Closure
-// Function con có thể truy suất scope của function cha
-// Parent Function
-function sayHello2() {
-  let message = "Hi";
-  // inner function
-  function sayHi() {
-    console.log(message);
-  }
-  return sayHi;
-}
-let hello = sayHello2();
-hello();
-
-// * Trường hợp 3
-// ! Nghiên cứu trường hợp 3 để hiểu sâu hơn chứ nó hơi phức tạp rùi á
-function sayHello3(message3) {
-  return function hiYourName(name) {
-    console.log(`${message3} ${name}`);
-  };
-}
-let hello3 = sayHello3("Welcome to Javascript");
-hello3("Kim Thành");
