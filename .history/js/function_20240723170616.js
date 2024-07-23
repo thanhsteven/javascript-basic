@@ -8,34 +8,24 @@ let b = 90;
 function tinhTong() {
   console.log(a + b);
 }
-// tinhTong();
+tinhTong();
 
 // Cách viết 1 hàm function
 function sum(a, b) {
   return a + b;
 }
 // Cách gọi 1 function
-// console.log(sum(12, 32));
+console.log(sum(12, 32));
 
-function add(a = 0, b = 0) {
+function sum2(a = 0, b = 0) {
   const total = a + b;
-  return total;
+  return console.log(`Kết quả hàm là : ${total}`);
 }
-add(9, 10);
+// console.log(sum2(9, 8));
+sum2(9, 10);
 
 // ! Hoặc có thể làm như sau
 // ! Gán function cho 1 biến "add" nhưng chưa gọi nó ra.
-const sum2 = add;
-console.log(`Kết quả của sum2 = ${sum2(9, 8)}`);
-
+const add = sum2;
 // * Cách gọi như sau:
-sum2(300, 400);
-
-// Todo: Tính trung bình của 2 số a và b
-function average(a, b, fn) {
-  const total2 = fn(a, b);
-  return total2 / 2;
-}
-
-let c = average(300, 200, sum2);
-console.log(`Kết quả tính trung bình = ${c}`);
+add(300, 400);

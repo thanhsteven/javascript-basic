@@ -38,4 +38,4 @@ function average(a, b, fn) {
 }
 
 let c = average(300, 200, sum2);
-console.log(`Kết quả tính trung bình = ${c}`);
+console.log(`Kết quả tính trung bình là: ${c}`);

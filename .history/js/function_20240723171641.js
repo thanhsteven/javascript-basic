@@ -8,25 +8,25 @@ let b = 90;
 function tinhTong() {
   console.log(a + b);
 }
-// tinhTong();
+tinhTong();
 
 // Cách viết 1 hàm function
 function sum(a, b) {
   return a + b;
 }
 // Cách gọi 1 function
-// console.log(sum(12, 32));
+console.log(sum(12, 32));
 
 function add(a = 0, b = 0) {
   const total = a + b;
-  return total;
+  return console.log(`Kết quả hàm là : ${total}`);
 }
-add(9, 10);
+// console.log(sum2(9, 8));
+// add(9, 10);
 
 // ! Hoặc có thể làm như sau
 // ! Gán function cho 1 biến "add" nhưng chưa gọi nó ra.
 const sum2 = add;
-console.log(`Kết quả của sum2 = ${sum2(9, 8)}`);
 
 // * Cách gọi như sau:
 sum2(300, 400);
@@ -38,4 +38,4 @@ function average(a, b, fn) {
 }
 
 let c = average(300, 200, sum2);
-console.log(`Kết quả tính trung bình = ${c}`);
+console.log(c);
