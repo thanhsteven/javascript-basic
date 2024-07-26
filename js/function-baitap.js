@@ -7,5 +7,3 @@ function compare(a = 0, b = 0) {
   return Math.max(a, b);
 }
 console.log(`Số lớn nhất là = ${compare(90, 88)}`);
-
-// Có phải là do extension Local history không ?
