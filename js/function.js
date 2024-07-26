@@ -81,18 +81,29 @@ if (2 > 1) {
 console.log(message3);
 
 // ! Closure
+
+// * Lexical Scope : Định nghĩa phạm vi hoạt động của cái biến đó tại vị trí mà nó được khai báo trong source code.
+let aNewName = "PKT Ball"; // --> Đây là global scope
+function sayHello() {
+  let message = "Xin chào"; // --> Đây là block scope
+  console.log(`Lời nhắn: ${message} ${aNewName}`);
+}
+sayHello();
+
 // * Function con có thể truy suất scope của function cha
 // Parent Function
 function sayHello2() {
-  let message = "Function con có thể truy suất được scope của function cha";
+  let message =
+    "function con có quyền truy suất được những cái scope của function cha";
   // inner function
   function sayHi() {
     console.log(message);
   }
   return sayHi;
 }
+// ! Chú ý chỗ này
 let hello = sayHello2();
-hello();
+hello(); // --> phải gọi cái biến đó ra
 
 // ! Trường hợp 3
 // * Nghiên cứu trường hợp 3 để hiểu sâu hơn chứ nó hơi phức tạp rùi á
@@ -101,5 +112,15 @@ function sayHello3(message3) {
     console.log(`${message3} ${name}`);
   };
 }
-let hello3 = sayHello3("Welcome to Javascript");
-hello3("Kim Thành");
+let hello3 = sayHello3("Đây là 1 ví dụ phức tạp hơn về Closure.");
+hello3("Nghiên cứu cho kỹ nhé !");
+
+function anotherFunction() {
+  let otherMessage = "Xin chào anotherFunction";
+  function sayHi() {
+    console.log(otherMessage);
+  }
+  return sayHi;
+}
+let callFunc = anotherFunction();
+callFunc();
