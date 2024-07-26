@@ -126,11 +126,19 @@ let callFunc = anotherFunction();
 callFunc();
 
 // ! Arrow Function : Anonymous Function (Func không tên)
+// Normal function
 const square = function (x) {
   return x * x;
 };
 console.log(`Diện tích hình vuông 1 = ${square(5)}m2`);
+// Arrow function
 const square2 = (x) => {
   return x * x;
 };
 console.log(`Diện tích hình vuông 2 = ${square2(10)}m2`);
+const square3 = () => {
+  return 1000;
+};
+// Viết rút gọn như này
+const square4 = () => 1000;
+const square5 = (x) => x * x;
