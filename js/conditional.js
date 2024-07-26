@@ -2,11 +2,11 @@
 const isRich = false;
 const myMoney = 100000000;
 if (!isRich) {
-	console.log("I will buy a new car");
+  console.log("I will buy a new car");
 } else if (myMoney > 100000) {
-	console.log("I will give you some money");
+  console.log("I will give you some money");
 } else {
-	console.log("I will save my money");
+  console.log("I will save my money");
 }
 
 // alert("You have so much money");
@@ -32,9 +32,9 @@ if (!isRich) {
 const a = prompt("Nhập vào số a", "");
 const b = prompt("Nhập vào số b", "");
 if (Number(a) > Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
+  alert(`Số lớn hơn là số ${Math.max(a, b)}`);
 } else if (Number(a) < Number(b)) {
-	alert(`Số lớn hơn là số ${Math.max(a, b)}`);
+  alert(`Số lớn hơn là số ${Math.max(a, b)}`);
 } else {
-	alert("2 số trên bằng nhau !");
+  alert("2 số trên bằng nhau !");
 }
