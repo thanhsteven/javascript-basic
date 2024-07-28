@@ -37,3 +37,14 @@ birthday.setHours(23);
 birthday.setMinutes(24);
 birthday.setSeconds(24);
 console.log(`My birthday after update: ${birthday}`);
+
+// Date String
+
+// * Trả về ngày giờ hiện tại
+console.log(now.toDateString());
+console.log(now.toTimeString());
+
+// * Trả về m/dd/yyyy
+console.log(now.toLocaleDateString());
+console.log(now.toLocaleDateString("vi-VI"));
+console.log(now.toISOString());
