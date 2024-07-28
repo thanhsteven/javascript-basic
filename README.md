@@ -8,7 +8,7 @@ if (2 > 1) {
 let number = 100;
 const number2 = 999;
 console.log(number) --> Đúng
-consol.log(number2) --> Đúng
+console.log(number2) --> Đúng
 }
 console.log(number) --> Sai
 console.log(number2) --> Sai

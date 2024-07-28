@@ -27,6 +27,18 @@ function calculateCurrentAge(yearBorn) {
 console.log(calculateCurrentAge(2001));
 
 // Todo 3: Viết chương trình đếm ngược thời gian theo từng giây (countdown) dựa vào thời gian đầu vào. Ví dụ thời gian làm bài tập là 30 phút nếu chạy về 0 thì thông báo là hết thời gian.
-const countdown = setTimeout(function () {});
+function countdown(minutes = 1) {
+  let seconds = minutes * 60;
+  let counter = 0;
+  const timer = setInterval(function () {
+    counter = counter + 1;
+    console.log(counter);
+    if (counter === seconds) {
+      clearInterval(timer);
+      console.log("Your time is end !");
+    }
+  }, 1000);
+}
+countdown(1);
 
 // Todo 4: Viết chương trình có tên là timesince, đầu vào là thời gian và tính thời gian đầu vào so với thời gian hiện tại. Ví dụ bạn đang chat với 1 bạn A, sau đó bạn A offline và sau đó vài phút thì hiển thị bạn A vừa online '3 phút trước', '2 tháng trước', '30 giây trước', '1 năm trước'
