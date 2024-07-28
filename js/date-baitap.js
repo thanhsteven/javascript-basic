@@ -36,6 +36,11 @@ function countdown(minutes = 1) {
     if (counter === seconds) {
       clearInterval(timer);
       console.log("Your time is end !");
+      if (seconds === 30 * 60) {
+        countdown(2);
+      } else {
+        countdown(minutes);
+      }
     }
   }, 1000);
 }
