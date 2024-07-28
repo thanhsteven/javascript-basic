@@ -1,11 +1,32 @@
+// Todo basic: In ra ngày tháng năm theo format của Việt Nam có số '0' ở trước tháng.
 const now = new Date();
-console.log(now.toDateString());
-console.log(now.toLocaleDateString("vi-VI"));
-
+now.toDateString();
+now.toLocaleDateString("vi-VI");
 const myYear = now.getFullYear();
 const myMonth = now.getMonth() + 1;
 const prefixMonth = myMonth < 10 ? "0" : "";
 const myDate = now.getDate();
-
 const customTime = `${myDate}/${prefixMonth}${myMonth}/${myYear}`;
-console.log(customTime);
+console.log(`Định dạng ngày theo Việt Nam là: ${customTime}`);
+
+// Todo 2: Viết chương trình nhập vào năm sinh và in ra số tuổi.
+const myYearBorn = 1996;
+let myAge = now.getFullYear() - myYearBorn;
+// console.log(`Tuổi của tôi là : ${myAge} tuổi`);
+
+let myAge2 = function () {
+  return now.getFullYear() - myYearBorn;
+};
+// console.log(`Hiện số tuổi của tôi là : ${myAge2()} tuổi`);
+
+function calculateCurrentAge(yearBorn) {
+  if (typeof yearBorn !== "number") return "Vui lòng nhập dưới dạng số";
+  let myCurrentAge = now.getFullYear() - yearBorn;
+  return `Tuổi của tôi là: ${myCurrentAge} tuổi`;
+}
+console.log(calculateCurrentAge(2001));
+
+// Todo 3: Viết chương trình đếm ngược thời gian theo từng giây (countdown) dựa vào thời gian đầu vào. Ví dụ thời gian làm bài tập là 30 phút nếu chạy về 0 thì thông báo là hết thời gian.
+const countdown = setTimeout(function () {});
+
+// Todo 4: Viết chương trình có tên là timesince, đầu vào là thời gian và tính thời gian đầu vào so với thời gian hiện tại. Ví dụ bạn đang chat với 1 bạn A, sau đó bạn A offline và sau đó vài phút thì hiển thị bạn A vừa online '3 phút trước', '2 tháng trước', '30 giây trước', '1 năm trước'
