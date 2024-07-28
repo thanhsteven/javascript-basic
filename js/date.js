@@ -48,3 +48,16 @@ console.log(now.toTimeString());
 console.log(now.toLocaleDateString());
 console.log(now.toLocaleDateString("vi-VI"));
 console.log(now.toISOString());
+
+// Settimeout và setInterval/
+// * Chức năng popup tự động hiển thị
+const timeOut = setTimeout(function () {
+  alert("Call me after 3 seconds");
+}, 3000);
+clearTimeout(timeOut);
+
+// * Đồng hồ đếm ngược
+const interval = setInterval(function () {
+  console.log("Xin chào cô chú, xin chào các bạn");
+}, 1000);
+clearInterval(interval);
