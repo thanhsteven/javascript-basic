@@ -44,7 +44,7 @@ function countdown(minutes = 1) {
     }
   }, 1000);
 }
-countdown(1);
+// countdown(1);
 
 // Todo 4: Viết chương trình có tên là timesince, đầu vào là thời gian và tính thời gian đầu vào so với thời gian hiện tại. Ví dụ bạn đang chat với 1 bạn A, sau đó bạn A offline và sau đó vài phút thì hiển thị bạn A vừa online '3 phút trước', '2 tháng trước', '30 giây trước', '1 năm trước'
 function timesince(date) {
