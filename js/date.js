@@ -44,7 +44,7 @@ console.log(`My birthday after update: ${birthday}`);
 console.log(now.toDateString());
 console.log(now.toTimeString());
 
-// * Trả về m/dd/yyyy
+// * Trả về mm/dd/yyyy
 console.log(now.toLocaleDateString());
 console.log(now.toLocaleDateString("vi-VI"));
 console.log(now.toISOString());

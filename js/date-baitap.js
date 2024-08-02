@@ -46,6 +46,27 @@ function countdown(minutes = 1) {
 }
 // countdown(1);
 
+// Todo 3* : Viết hàm countdown đếm ngược trong 7 ngày chuyên cho các ladipage. Trong hàm cho phép mình nhập số ngày muốn đếm ngược, số giờ muốn đếm ngược và số hiển thị luôn số giây sẽ đếm ngược luôn. Sau khi đếm xong khoảng thời gian đó thì hãy tự động quay về số ban đầu.
+
+// 7 ngày 5 giờ 30 phút => đếm số giây
+function thanhCountDown(dates = 0, hours = 0, minutes = 0) {
+  let countMinutes = 60 * minutes;
+  let countHours = 60 * minutes * hours;
+  let countDates = 60 * 60 * hours * dates;
+  let seconds = countDates + countHours + countMinutes;
+  console.log(seconds);
+  let counter = 0;
+  let timer = setInterval(function () {
+    counter = counter + 1;
+    console.log(counter);
+    if (counter === seconds) {
+      console.log("Hết thời gian !");
+      clearInterval(timer);
+    }
+  }, 1000);
+}
+// thanhCountDown(7, 4, 30);
+
 // Todo 4: Viết chương trình có tên là timesince, đầu vào là thời gian và tính thời gian đầu vào so với thời gian hiện tại. Ví dụ bạn đang chat với 1 bạn A, sau đó bạn A offline và sau đó vài phút thì hiển thị bạn A vừa online '3 phút trước', '2 tháng trước', '30 giây trước', '1 năm trước'
 function timesince(date) {
   const now = new Date();
