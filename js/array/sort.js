@@ -12,3 +12,9 @@ const number2 = number.sort(function (a, b) {
   if (a > b) return 1;
   if (a < b) return -1;
 });
+console.log("----function callback-----");
+console.log(number2);
+// Arrow function
+const number3 = number.sort((a, b) => (a > b ? 1 : -1));
+console.log("-----arrow function-----");
+console.log(number3);
