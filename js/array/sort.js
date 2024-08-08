@@ -9,12 +9,16 @@ console.log(number.sort());
 
 // function(callback)
 const number2 = number.sort(function (a, b) {
-  if (a > b) return 1;
-  if (a < b) return -1;
+  if (a > b) return 1; // Sắp xếp theo tăng dần
+  if (a < b) return -1; // Sắp xếp theo giảm dần
 });
 console.log("----function callback-----");
 console.log(number2);
 // Arrow function
 const number3 = number.sort((a, b) => (a > b ? 1 : -1));
-console.log("-----arrow function-----");
+console.log("-----arrow function - Tăng dần -----");
 console.log(number3);
+
+const number4 = number.sort((a, b) => (a > b ? -1 : 1));
+console.log("----- Sort - Giảm dần-----");
+console.log(number4);
